@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MSContractViewController: UIViewController {
+class MSContractViewController: MSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

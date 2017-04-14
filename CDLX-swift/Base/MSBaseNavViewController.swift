@@ -14,6 +14,11 @@ class MSBaseNavViewController: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        UINavigationBar.appearance().titleTextAttributes=[NSFontAttributeName: UIFont.systemFont(ofSize: 19),NSForegroundColorAttributeName : black_color]
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

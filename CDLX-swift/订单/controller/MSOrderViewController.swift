@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MSOrderViewController: UIViewController {
+class MSOrderViewController: MSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,8 +12,58 @@ class MSBaseTabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        settingBase()
+        
+        confitUI()
+    }
+    // MARK: 统一设置
+    fileprivate func settingBase() {
+      
+        let normalDic : NSMutableDictionary = [
+            NSForegroundColorAttributeName : gray_color,
+            NSFontAttributeName : UIFont.systemFont(ofSize: 10)
+            
+        ]
+    UITabBarItem.appearance().setTitleTextAttributes(normalDic as? [String : Any], for:.normal )
+        
+        let selectDic : NSMutableDictionary = [
+            NSForegroundColorAttributeName : orange_color,
+            NSFontAttributeName : UIFont.systemFont(ofSize: 10)
 
-        // Do any additional setup after loading the view.
+        ]
+        UITabBarItem.appearance().setTitleTextAttributes(selectDic as? [String : Any], for: .selected)
+        
+        
+    
+    }
+    
+    
+     fileprivate  func confitUI() {
+                
+       setNavRootViewControll(VC: MSProductViewController(), title: "产品", normalImageName: "chanpinWhite", selectImageName: "chanpin")
+        setNavRootViewControll(VC: MSContractViewController(), title: "合同", normalImageName: "icon_contract", selectImageName: "icon_contract_select")
+        setNavRootViewControll(VC: MSOrderViewController(), title: "订单", normalImageName: "icon_order", selectImageName: "icon_order_select")
+        setNavRootViewControll(VC: MSMyViewController(), title: "我的", normalImageName: "icon_my", selectImageName: "icon_my_select")
+
+        
+    }
+    fileprivate func setNavRootViewControll(VC : MSBaseViewController,title : String, normalImageName : String ,selectImageName :String ){
+    
+        let normalImage = UIImage(named: normalImageName)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        
+        let selecrImage = UIImage(named: selectImageName)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        VC.tabBarItem.title = title
+        VC.tabBarItem.selectedImage=selecrImage
+        VC.tabBarItem.image = normalImage
+        VC.navigationItem.title=title
+        VC.view.backgroundColor=UIColor.randomColor()
+        
+        let Nav : MSBaseNavViewController = MSBaseNavViewController(rootViewController:VC)
+        
+        self.addChildViewController(Nav)
+        
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +71,4 @@ class MSBaseTabViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
