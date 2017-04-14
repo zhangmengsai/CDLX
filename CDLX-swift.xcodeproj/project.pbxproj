@@ -11,6 +11,7 @@
 		1F20DBF51E8F79BE00DAE761 /* MSOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20DBF41E8F79BE00DAE761 /* MSOrderViewController.swift */; };
 		1F20DBF71E8F79F200DAE761 /* MSContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20DBF61E8F79F200DAE761 /* MSContractViewController.swift */; };
 		1F20DBF91E8F7A1200DAE761 /* MSProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F20DBF81E8F7A1200DAE761 /* MSProductViewController.swift */; };
+		1F67A8C61EA0C3C4001698AA /* LocationTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F67A8C51EA0C3C4001698AA /* LocationTransform.swift */; };
 		1F78185C1E8CE863006C4D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F78185B1E8CE863006C4D5C /* AppDelegate.swift */; };
 		1F78185E1E8CE863006C4D5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F78185D1E8CE863006C4D5C /* ViewController.swift */; };
 		1F7818611E8CE863006C4D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F78185F1E8CE863006C4D5C /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		1F20DBF41E8F79BE00DAE761 /* MSOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSOrderViewController.swift; sourceTree = "<group>"; };
 		1F20DBF61E8F79F200DAE761 /* MSContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSContractViewController.swift; sourceTree = "<group>"; };
 		1F20DBF81E8F7A1200DAE761 /* MSProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSProductViewController.swift; sourceTree = "<group>"; };
+		1F67A8C51EA0C3C4001698AA /* LocationTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTransform.swift; sourceTree = "<group>"; };
 		1F7818581E8CE863006C4D5C /* CDLX-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDLX-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F78185B1E8CE863006C4D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F78185D1E8CE863006C4D5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 		1FDC4EE61E8E3CC700903F06 /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				1F67A8C51EA0C3C4001698AA /* LocationTransform.swift */,
 				1FDC4EE71E8E3CC700903F06 /* NSDate-Extension.swift */,
 				1FDC4EE81E8E3CC700903F06 /* UIBarButtonItem-Extension.swift */,
 				1FDC4EE91E8E3CC700903F06 /* UIColor-Extension.swift */,
@@ -635,6 +638,7 @@
 				1FDC4EE51E8E397A00903F06 /* MSBaseTabViewController.swift in Sources */,
 				1FDC4EEA1E8E3CC700903F06 /* NSDate-Extension.swift in Sources */,
 				1FDC4EE11E8E376B00903F06 /* MSBaseNavViewController.swift in Sources */,
+				1F67A8C61EA0C3C4001698AA /* LocationTransform.swift in Sources */,
 				1F20DBF51E8F79BE00DAE761 /* MSOrderViewController.swift in Sources */,
 				1FDC4EDF1E8E374F00903F06 /* MSBaseViewController.swift in Sources */,
 				1F78188C1E8CEC09006C4D5C /* MSCommon.swift in Sources */,
